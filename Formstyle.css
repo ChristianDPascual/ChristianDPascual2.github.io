@@ -1,0 +1,935 @@
+.formulario
+{
+
+    display: grid;
+}
+
+.formularioBlock
+{
+    font-weight: 700;
+}
+
+.formularioInput
+{
+    transition: .3seg ease all;
+}
+
+.miniContainer
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    object-fit: contain;
+    text-align: center;
+}
+.miniContainer1
+{
+    margin-right: 15px;
+}
+
+.contenedorCaja
+{
+    display: grid;
+
+}
+
+.Caja1
+{
+    display: flex;
+}
+
+.Caja2
+{
+    display: flex;
+}
+
+.Caja3
+{
+    display: flex;
+}
+
+.CajaLabel1
+{
+    background-color : green;
+}
+.CajaLabel2
+{
+    background-color : orangered;
+}
+.CajaLabel3
+{
+    background-color : rgb(15, 120, 134);
+}
+
+.CH7
+{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    
+}
+
+.CH2
+{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+
+.pC
+{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    margin: auto;
+    -webkit-text-stroke: 1px black;
+    color: white;    
+}
+
+@media (max-width: 320px)/*celulares chicos*/
+{
+    .formulario
+    {
+        margin: 0;
+        gap: 10px;
+        grid-template-columns:repeat(1,minmax(100px,250px));
+        grid-template-rows:repeat(8,minmax(30px,60px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        padding-bottom: 30px;
+    
+    }
+    
+    .formularioBlock
+    {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+    
+    }
+    
+    .formularioInput
+    {
+        object-fit: cover;
+        background-color: white;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .miniContainer
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        object-fit: contain;
+        text-align: center;
+    }
+    .miniContainer1
+    {
+        margin-right: 15px;
+    }
+    
+    .contenedorCaja
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns:repeat(1,minmax(100px,250px));
+        grid-template-rows:repeat(3,minmax(100px,250px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .Caja1
+    {
+        border: 3px solid green;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        object-fit: contain;
+    
+    
+    }
+    
+    .Caja2
+    {
+        border: 3px solid orangered;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .Caja3
+    {
+        border: 3px solid rgb(15, 120, 134);;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .CajaLabel1
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid green;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel2
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid orangered;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel3
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid rgb(15, 120, 134);
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .CH7
+    {
+        padding: 5px;
+        
+    }
+    
+    .CH2
+    {
+        padding: 5px;
+    }
+    
+    .pC
+    {
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+        -webkit-text-stroke: 0.5px black;
+        color: black;
+        font-size: 15px;    
+    }   
+}
+
+@media (min-width: 321px) and (max-width: 599px)/*celulares normales*/
+{
+    .formulario
+    {
+        margin: 0;
+        gap: 10px;
+        grid-template-columns:repeat(1,minmax(100px,250px));
+        grid-template-rows:repeat(8,minmax(30px,60px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+        padding-bottom: 30px;
+    
+    }
+    
+    .formularioBlock
+    {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+    
+    }
+    
+    .formularioInput
+    {
+        object-fit: cover;
+        background-color: white;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .miniContainer
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        object-fit: contain;
+        text-align: center;
+    }
+    .miniContainer1
+    {
+        margin-right: 15px;
+    }
+    
+    .contenedorCaja
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+        display: grid;
+        gap: 15px;
+        grid-template-columns:repeat(1,minmax(100px,250px));
+        grid-template-rows:repeat(3,minmax(100px,250px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .Caja1
+    {
+        border: 3px solid green;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        object-fit: contain;
+    
+    
+    }
+    
+    .Caja2
+    {
+        border: 3px solid orangered;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .Caja3
+    {
+        border: 3px solid rgb(15, 120, 134);;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .CajaLabel1
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid green;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel2
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid orangered;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel3
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid rgb(15, 120, 134);
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .CH7
+    {
+        padding: 5px;
+        
+    }
+    
+    .CH2
+    {
+        padding: 5px;
+    }
+    
+    .pC
+    {
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+        -webkit-text-stroke: 0.5px black;
+        color: black;
+        font-size: 15px;    
+    }   
+}
+@media (min-width: 600px) and (max-width: 750px)/*tablets*/
+{
+    .formulario
+    {
+        margin: 0;
+        gap: 10px;
+        grid-template-columns:repeat(2,minmax(100px,350px));
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        padding-bottom: 30px;
+    
+    }
+    
+    .formularioBlock
+    {
+        padding: 10px;
+        display: block;
+    }
+    
+    .formularioInput
+    {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        padding: auto;
+    }
+    
+    .miniContainer
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        object-fit: contain;
+        text-align: center;
+    }
+    .miniContainer1
+    {
+        margin-right: 15px;
+    }
+    
+    .contenedorCaja
+    {
+        padding-top: 30px;
+        margin: 0 60px 10px 60px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns:repeat(3,minmax(200px,230px));
+        grid-template-rows:repeat(1,minmax(300px,300px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .Caja1
+    {
+        border: 3px solid green;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    
+    }
+    
+    .Caja2
+    {
+        border: 3px solid orangered;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .Caja3
+    {
+        border: 3px solid rgb(15, 120, 134);;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .CajaLabel1
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid green;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel2
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid orangered;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel3
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid rgb(15, 120, 134);
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .CH7
+    {
+        padding: 5px;
+        
+    }
+    
+    .CH2
+    {
+        padding: 5px;
+    }
+    
+    .pC
+    {
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        font-size: 20px;    
+    }
+
+}
+
+@media (min-width: 751px) and (max-width: 990px)/*tablets*/
+{
+    .formulario
+    {
+        margin: 0;
+        gap: 10px;
+        grid-template-columns:repeat(2,minmax(100px,350px));
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        padding-bottom: 30px;
+    
+    }
+    
+    .formularioBlock
+    {
+        padding: 10px;
+        display: block;
+    }
+    
+    .formularioInput
+    {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        padding: auto;
+    }
+    
+    .miniContainer
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        object-fit: contain;
+        text-align: center;
+    }
+    .miniContainer1
+    {
+        margin-right: 15px;
+    }
+    
+    .contenedorCaja
+    {
+        padding-top: 30px;
+        margin: 0 60px 10px 60px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns:repeat(3,minmax(230px,230px));
+        grid-template-rows:repeat(1,minmax(300px,300px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .Caja1
+    {
+        border: 3px solid green;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    
+    }
+    
+    .Caja2
+    {
+        border: 3px solid orangered;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .Caja3
+    {
+        border: 3px solid rgb(15, 120, 134);;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .CajaLabel1
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid green;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel2
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid orangered;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel3
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid rgb(15, 120, 134);
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .CH7
+    {
+        padding: 5px;
+        
+    }
+    
+    .CH2
+    {
+        padding: 5px;
+    }
+    
+    .pC
+    {
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        font-size: 20px;    
+    }
+ 
+}
+
+@media (min-width:991px)/*computadoras*/
+{
+    .formulario
+    {
+        margin: 0;
+        gap: 10px;
+        grid-template-columns:repeat(2,minmax(100px,350px));
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        padding-bottom: 30px;
+    
+    }
+    
+    .formularioBlock
+    {
+        padding: 10px;
+        display: block;
+    }
+    
+    .formularioInput
+    {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        padding: auto;
+    }
+    
+    .miniContainer
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        object-fit: contain;
+        text-align: center;
+    }
+    .miniContainer1
+    {
+        margin-right: 15px;
+    }
+    
+    .contenedorCaja
+    {
+        padding-top: 30px;
+        margin: 0 60px 10px 60px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns:repeat(3,minmax(100px,250px));
+        grid-template-rows:repeat(1,minmax(250px,300px));
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+    }
+    
+    .Caja1
+    {
+        border: 3px solid green;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    
+    }
+    
+    .Caja2
+    {
+        border: 3px solid orangered;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .Caja3
+    {
+        border: 3px solid rgb(15, 120, 134);;
+        border-width: 5px;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 15px;
+    
+    }
+    
+    .CajaLabel1
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid green;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel2
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid orangered;
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .CajaLabel3
+    {
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: solid rgb(15, 120, 134);
+        border-radius: 6px 6px 0px 0px;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .CH7
+    {
+        padding: 5px;
+        
+    }
+    
+    .CH2
+    {
+        padding: 5px;
+    }
+    
+    .pC
+    {
+        text-align: center;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        font-size: 20px;    
+    }
+
+}
